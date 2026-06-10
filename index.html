@@ -1,255 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Michael Gizaw</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="mediaqueries.css">
-    </head>
-    <body>
-        <nav id="desktop-nav">
-            <div class="logo">Michael Gizaw</div>
-            <div>
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        <nav id="hamburger-nav">
-            <div class="logo">Michael Gizaw</div>
-            <div class="hamburger-menu">
-                <div class="hamburger-icon" onclick="toggleMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="menu-links">
-                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-                </div>
-            </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Michael Gizaw — Computer Science · ML · Security</title>
+  <meta name="description" content="Michael Gizaw — computer science senior at the University of Maryland working across machine learning, remote sensing, and systems security.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Fragment+Mono:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-        </nav>
-        <section id="profile">
-            <div class="section__pic-container">
-                <img src="./assets/profile-pic.png" alt="Michael Gizaw Profile Picture">
-            </div>
-            <div class="section__text">
-                <p class="section__text__p1">Hello, I'm</p>
-                <h1 class="title">Michael Gizaw</h1>
-                <p class="section__text__p2">Computer Science Student</p>
-                <div class="btn-container">
-                    <button class="btn btn-color-2" onclick="window.open('./assets/Resume.docx.pdf')"> Download CV</button>
-                    <button class="btn btn-color-1" onclick="location.href='./#contact'"> Contact Info</button>
-                </div>
-                <div id="social-container">
-                    <img src="./assets/linkedin.png" alt="My Linkedin Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/michael-gizaw1/'">
-                    <img src="./assets/github.png" alt="My Github Profile" class="icon" onclick="location.href='https://github.com/michael-gizaw'">
-                </div>
-            </div>
-        </section>
-        <section id="about">
-            <p class="section__text__p1">Get To Know More</p>
-            <h1 class="title">About Me</h1>
-            <div class="section-container">
-                <div class="section__pic-container">
-                    <img src="./assets/ABout.png" alt="Profile Picture" class="about-pic">
-                </div>
-                <div class="about-details-container">
-                    <div class="about-container">
-                        <div class="details-container">
-                            <img src="./assets/experience.png" alt="experience icon" class="icon">
-                            <h3>Experience</h3>
-                            <p>Rising Senior <br>Computer Science Student</p>
-                        </div>
-                        <div class="details-container">
-                            <img src="./assets/education.png" alt="education icon" class="icon">
-                            <h3>Education</h3>
-                            <p>B.Sc. Bachelors Degree</p>
-                        </div>
-                    </div>
-                    <div class="text-container">
-                        <p>
-                            As a Computer Science student at UMD, I blend my tech expertise with a strong entrepreneurial drive. I've launched small businesses and taught coding and drone operations to kids, showcasing my ability to innovate and educate. My journey is marked by a passion for merging technology with practical applications, aiming to shape the tech industry's future. With a unique mix of technical skills and business acumen, I'm eager to explore new challenges and opportunities in technology and entrepreneurship.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#experience'">
-        </section>
-        <section id="experience">
-            <p class="section__text__p1">Explore My</p>
-            <h1 class="title">Experience</h1>
-            <div class="experience-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <h2 class="experience-sub-title">Front-End Development</h2>
-                        <div class="article-container">
-                            <article>
-                                <img src="/assets/checkmark.png" alt="experience icon" class="icon">
-                                <div>
-                                    <h3>HTML</h3>
-                                    <p>Intermediate</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="/assets/checkmark.png" alt="experience icon" class="icon">
-                                <div>
-                                    <h3>CSS</h3>
-                                    <p>Intermediate</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="/assets/checkmark.png" alt="experience icon" class="icon">
-                                <div>
-                                    <h3>JavaScript</h3>
-                                    <p>Basic</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="/assets/checkmark.png" alt="experience icon" class="icon">
-                                <div>
-                                    <h3>React</h3>
-                                    <p>Basic</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="/assets/checkmark.png" alt="experience icon" class="icon">
-                                <div>
-                                    <h3>MathLabs</h3>
-                                    <p>Intermediate</p>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-                    <div class="details-container">
-                        <h2 class="experience-sub-title">Back-End Development</h2>
-                        <div class="article-container">
-                            <article>
-                                <img src="/assets/checkmark.png" alt="experience icon" class="icon">
-                                <div>
-                                    <h3>Python</h3>
-                                    <p>Intermediate</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="/assets/checkmark.png" alt="experience icon" class="icon">
-                                <div>
-                                    <h3>C</h3>
-                                    <p>Intermediate</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="/assets/checkmark.png" alt="experience icon" class="icon">
-                                <div>
-                                    <h3>Jave</h3>
-                                    <p>Intermediate</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="/assets/checkmark.png" alt="experience icon" class="icon">
-                                <div>
-                                    <h3>OcamL</h3>
-                                    <p>Basic</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="/assets/checkmark.png" alt="experience icon" class="icon">
-                                <div>
-                                    <h3>Rust</h3>
-                                    <p>Basic</p>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#projects'">
-        </section>
-        <section id="projects">
-            <p class="section__text__p1">Browse My Recent</p>
-            <h1 class="title">Projects</h1>
-            <div class="experience-details-container">
-                <div class="about-containers">
-                    <div class="details-container color-container">
-                        <div class="article-container">
-                            <img src="./assets/work-in-progress.png" alt="project 1" class="project-img">
-                        </div>
-                        <h2 class="experience-sub-title project-title">Project One</h2>
-                        <div class="btn-container">
-                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                                Github
-                            </button>
-                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                                Live Demo
-                            </button>
-                        </div>
-                    </div>
-                    <div class="details-container color-container">
-                        <div class="article-container">
-                            <img src="./assets/work-in-progress.png" alt="project 2" class="project-img">
-                        </div>
-                        <h2 class="experience-sub-title project-title">Project Two</h2>
-                        <div class="btn-container">
-                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                                Github
-                            </button>
-                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                                Live Demo
-                            </button>
-                        </div>
-                    </div>
-                    <div class="details-container color-container">
-                        <div class="article-container">
-                            <img src="./assets/work-in-progress.png" alt="project 3" class="project-img">
-                        </div>
-                        <h2 class="experience-sub-title project-title">Project Three</h2>
-                        <div class="btn-container">
-                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                                Github
-                            </button>
-                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                                Live Demo
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#projects'">
-        </section>
-        <section id="contact">
-            <p class="section__text__p1">Get in Touch</p>
-            <h1 class="title">Contact Me</h1>
-            <div class="contact-info-upper-container">
-                <div class="contact-info-container">
-                    <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
-                    <p><a href="mailto:michaelhgizaw@gmail.com">michaelhgizaw@gmail.com</a></p>
-                </div>
-                <div class="contact-info-container">
-                    <img src="./assets/linkedin.png" alt="Linkedin icon" class="icon contact-icon">
-                    <p><a href="https://www.linkedin.com/in/michael-gizaw1/">Linkedin</a></p>
-                </div>
-            </div>
-        </section>
-        <footer>
-            <nav>
-                <div class="nav-links-container">
-                    <ul class="nav-links">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#experience">Experience</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
-            <p>Copyright &#169; 2024 Michael Gizaw. All Rights Reserved</p>
-        </footer>
-        <script src="script.js">  </script>
-    </body>
+  <header class="site-nav">
+    <a class="logo" href="#top">M·GIZAW</a>
+    <nav aria-label="Primary">
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="./assets/Resume.docx.pdf" target="_blank" rel="noopener">Résumé ↧</a>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <p class="eyebrow reveal">Portfolio — College Park, MD · 39.0°N, 76.9°W</p>
+      <h1 class="hero-title">
+        <span class="line reveal">Michael</span>
+        <span class="line reveal">Gizaw</span>
+      </h1>
+      <div class="hero-sub reveal">
+        <p>
+          Computer science senior at the <strong>University of Maryland</strong>, working
+          across machine learning, satellite remote sensing, and systems security.
+          I build models from scratch, map wildfires from orbit, and break web apps
+          to learn how to defend them.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-solid" href="#projects">View projects</a>
+          <a class="btn btn-ghost" href="./assets/Resume.docx.pdf" target="_blank" rel="noopener">Download résumé</a>
+        </div>
+      </div>
+
+      <!-- Signature: dNBR burn-severity legend from the wildfire project -->
+      <figure class="severity-scale reveal" aria-label="Burn severity classification scale, the color system used across this site">
+        <figcaption class="scale-caption">
+          <span>dNBR — differenced Normalized Burn Ratio</span>
+          <span>classification · USGS severity classes</span>
+        </figcaption>
+        <div class="scale-band" role="img" aria-hidden="true">
+          <span class="scale-cursor"></span>
+        </div>
+        <div class="scale-ticks" aria-hidden="true">
+          <span>Unburned</span><span>Low</span><span>Mod-Low</span><span>Mod-High</span><span>High</span>
+        </div>
+      </figure>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section">
+      <div class="section-head reveal">
+        <h2>Selected projects</h2>
+        <p class="section-note">Indexed by burn-severity class — flagship work runs hottest.</p>
+      </div>
+
+      <article class="project reveal" style="--sev:var(--sev-high)">
+        <div class="project-meta">
+          <span class="sev-chip"><i></i>High severity</span>
+          <span class="mono-tag">Python · Google Earth Engine · Random Forest</span>
+        </div>
+        <div class="project-body">
+          <h3>Wildfire Burn-Severity Mapping</h3>
+          <p>
+            End-to-end Google Earth Engine pipeline mapping burn severity across
+            Yengo National Park, Australia, after the 2019–20 bushfire season —
+            fusing Landsat 8 and Sentinel-2 imagery.
+          </p>
+          <ul>
+            <li>Computed dNBR from pre/post-fire composites and classified terrain into six USGS-style severity levels.</li>
+            <li>300-tree Random Forest over a 10-band feature stack, trained on stratified samples (70/30 split).</li>
+            <li>Validated with confusion matrix, overall/producer/consumer accuracy, and feature-importance analysis.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="project reveal" style="--sev:var(--sev-modhigh)">
+        <div class="project-meta">
+          <span class="sev-chip"><i></i>Mod-high</span>
+          <span class="mono-tag">Python · NumPy · no ML frameworks</span>
+        </div>
+        <div class="project-body">
+          <h3>News Article Text Classification</h3>
+          <p>
+            Models that categorize news articles by topic (sports → soccer),
+            reaching <strong>83% classification accuracy</strong>.
+          </p>
+          <ul>
+            <li>Implemented a neural network and an SVM entirely from scratch, then compared their accuracy and performance trade-offs.</li>
+            <li>Owned the full ML workflow: text preprocessing, feature extraction, training, and evaluation.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="project reveal" style="--sev:var(--sev-modlow)">
+        <div class="project-meta">
+          <span class="sev-chip"><i></i>Mod-low</span>
+          <span class="mono-tag">Python · NumPy</span>
+        </div>
+        <div class="project-body">
+          <h3>Facial Recognition Neural Network</h3>
+          <p>
+            An artificial neural network designed and implemented from scratch to
+            identify and classify individuals from facial image data.
+          </p>
+          <ul>
+            <li>Engineered the data pipeline: one-hot label encoding and image preprocessing for model input.</li>
+            <li>Iterated on architecture and training to improve recognition performance.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="project reveal" style="--sev:var(--sev-low)">
+        <div class="project-meta">
+          <span class="sev-chip"><i></i>Low</span>
+          <span class="mono-tag">C · Web security · Cryptography</span>
+        </div>
+        <div class="project-body">
+          <h3>Web &amp; Systems Security</h3>
+          <p>
+            Offensive-then-defensive security work against test applications —
+            attack first, then ship the mitigation.
+          </p>
+          <ul>
+            <li>Exploited buffer overflow vulnerabilities to understand memory-safety attacks and their defenses.</li>
+            <li>Carried out SQL injection, XSS, and CSRF attacks, then applied the corresponding mitigations.</li>
+            <li>Worked with NoSQL stores and applied cryptographic primitives to secure data at rest and in transit.</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section">
+      <div class="section-head reveal">
+        <h2>Technical skills</h2>
+        <p class="section-note">Instrument panel — what I reach for.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-cell reveal">
+          <h4>Languages</h4>
+          <p>Python · C · Rust · JavaScript · SQL · OCaml · HTML/CSS</p>
+        </div>
+        <div class="skill-cell reveal">
+          <h4>Frameworks &amp; libraries</h4>
+          <p>React · NumPy · Pandas · Pygame</p>
+        </div>
+        <div class="skill-cell reveal">
+          <h4>Tools &amp; platforms</h4>
+          <p>Docker · Git · Linux · Google Colab · Google Earth Engine · NoSQL · Dafny</p>
+        </div>
+        <div class="skill-cell reveal">
+          <h4>Security</h4>
+          <p>Buffer overflow exploitation · SQL injection · XSS · CSRF · applied cryptography</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE + EDUCATION ============ -->
+    <section id="experience" class="section">
+      <div class="section-head reveal">
+        <h2>Experience</h2>
+      </div>
+
+      <ol class="timeline">
+        <li class="timeline-item reveal">
+          <div class="when mono-tag">Jun 2024 — present</div>
+          <div class="what">
+            <h3>AV Technician</h3>
+            <p class="where">University of Maryland · College Park, MD</p>
+            <p>On-site technical support for AV systems across all general-purpose
+            classrooms campus-wide. First responder for AV failures during lectures
+            and live events — diagnosing hardware, software, and conferencing issues
+            in real time and guiding non-technical faculty through fixes.</p>
+          </div>
+        </li>
+        <li class="timeline-item reveal">
+          <div class="when mono-tag">Jun 2023 — Aug 2023</div>
+          <div class="what">
+            <h3>Office Assistant</h3>
+            <p class="where">University of Maryland · College Park, MD</p>
+            <p>Coordinated a department-wide move during facility renovations and
+            managed asset inventory end-to-end across multiple teams.</p>
+          </div>
+        </li>
+        <li class="timeline-item reveal">
+          <div class="when mono-tag">May 2022 — Aug 2022</div>
+          <div class="what">
+            <h3>Summer Camp Instructor &amp; Mentor</h3>
+            <p class="where">Drobots Company · Washington, DC</p>
+            <p>Taught coding with Scratch to students aged 6–14, led daily camp
+            operations, and troubleshot drone hardware.</p>
+          </div>
+        </li>
+      </ol>
+
+      <div class="education reveal">
+        <div class="edu-left">
+          <p class="mono-tag">Education · expected Aug 2026</p>
+          <h3>B.S. Computer Science</h3>
+          <p class="where">University of Maryland, College Park</p>
+        </div>
+        <div class="edu-right">
+          <p>Member, Smith Analytics Consortium an industry–academia
+          analytics partnership with Deloitte, KPMG, and Unilever.</p>
+          <p class="coursework">Coursework: Algorithms · Data Structures · Computer Systems ·
+          Computer &amp; Network Security · Organization of Programming Languages ·
+          Data Science · Web Application Development</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="contact">
+      <p class="eyebrow reveal">Get in touch</p>
+      <a class="contact-mail reveal" href="mailto:michaelhgizaw@gmail.com">michaelhgizaw@gmail.com</a>
+      <div class="contact-links reveal">
+        <a href="https://github.com/michael-gizaw" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/michael-gizaw1/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="tel:+12025094020">202·509·4020</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <span>© 2026 Michael Gizaw</span>
+    <span class="mono-tag">Built with love · michaelgizaw.com</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
